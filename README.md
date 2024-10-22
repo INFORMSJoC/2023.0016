@@ -39,14 +39,14 @@ The goal of this software is to demonstrate the results of Single-source and Mul
 
 All the software in this repository was developed based on Python. During the development, the software was separated into 2 formats, Jupiter Notebook and Python.
 
-The Jupiter Notebook source files for all methods described in the paper is available in the src/Jupiter_Code subfolder of this repository. 
-The Jupiter Notebook test files for all methods described in the paper is available in the script/Jupiter_Code subfolder of this repository. 
+The Jupyter Notebook source files for all methods described in the paper are available in the src/Jupyter subfolder of this repository. 
+The Jupyter Notebook test files for all methods described in the paper are available in the script/Jupyter subfolder of this repository. 
 
-*Jupiter Notebook version used:*
-- Jupiter Notebook version 6.5.2 in Anaconda Distribution version 2.3.1
+*Jupyter Notebook version used:*
+- Jupyter Notebook version 6.5.2 in Anaconda Distribution version 2.3.1
 
-The Python source files for all methods described in the paper is available in the src/Python_Code subfolder of this repository. 
-The Python test files for all methods described in the paper is available in the script/Python_Code subfolder of this repository. 
+The Python source files for all methods described in the paper are available in the src/py subfolder of this repository. 
+The Python test files for all methods described in the paper are available in the script/py subfolder of this repository. 
 
 *Python version used:*
 - Python version 3.12.0
@@ -88,7 +88,7 @@ Tables 2-10 in the paper can be reviewed under the results folder.
 
 ### To reproduce Data Generation
 
-* Run: src/Python Code/Data Generation.py, or src/Jupiter Code/Data_Generation.ipynb
+* Run: src/py/Data Generation.py, or src/Jupyter/Data_Generation.ipynb
 * Note:
   * Dimensions, Distributions, and Scales for the generated data can be controlled in the code file.
   * All the uniform distributions should be scaled non-negative.
@@ -98,7 +98,7 @@ Tables 2-10 in the paper can be reviewed under the results folder.
 
 ### To reproduce Single-source Methods Results alone
 
-* Run: src/Python Code/single_source_algo.py, or src/Jupiter Code/single_source_algo.ipynb
+* Run: src/py/single_source_algo.py, or src/Jupyter/single_source_algo.ipynb
 * Note:
   * Dimensions, Distributions, and Scales for the input data can be controlled in the code file.
   * Under medium dimensions (10 sensors/stages, 20 targets), LP will face computational difficulties.
@@ -108,7 +108,7 @@ Tables 2-10 in the paper can be reviewed under the results folder.
 
 ### To reproduce Multi-source Methods Results with Single-source Methods
 
-* Run: scripts/Python Code/test_algos.py, or scripts/Jupiter Code/test_algos.ipynb
+* Run: scripts/py/test_algos.py, or scripts/Jupyter/test_algos.ipynb
 * Note:
   * Dimensions, Distributions, and Scales for the input data can be controlled in the code file.
   * For single-source tests, please refer to the previous instruction on computational difficulties among LP and RMSRA.
@@ -118,9 +118,9 @@ Tables 2-10 in the paper can be reviewed under the results folder.
   * Test_algos files in both formats have another copy under the src folder.
   * User should use this to reproduce the multi-source results from Table 7 to Table 9 in the manuscript. All of these including tables and figures can also be checked from the result_smallest_0_100.xlsx and further test.xlsx under the results folder.
   
-### To reproduce Noisy Situation Testing
+### To reproduce Noisy Situations Testing
 
-* Run: scripts/Python Code/noise_test.py, or scripts/Jupiter Code/noise_test.ipynb
+* Run: scripts/py/noise_test.py, or scripts/Jupyter/noise_test.ipynb
 * Note:
   * Dimensions, Distributions, and Scales for the input data can be controlled in the code file.
   * For single-source noisy tests, users may select path-based or clique-based formulation besides the input data control
