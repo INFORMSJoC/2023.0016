@@ -1,5 +1,5 @@
 Tianyu Yang <yang.tianyu@northeastern.edu>
 Jiongbai Liu <liu.jio@northeastern.edu>
 Tasnim Ibn Faiz <faiz.t@northeastern.edu>
-Chrysafis Vogiatzis <chrys@illinois.edu, https://vogiatzis.web.illinois.edu>
-Md. Noor-E-Alam <mnalam@neu.edu, https://mnalam.com>
+Chrysafis Vogiatzis <chrys@illinois.edu>
+Md. Noor-E-Alam <mnalam@neu.edu>
