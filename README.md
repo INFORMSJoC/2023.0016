@@ -1,31 +1,42 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
 # Code Repository for Computational Framework for Target Tracking Information Fusion Problems
-This code repository is for the Computational Framework for Target Tracking Information Fusion Problems by T. Yang, J. Liu, T. Faiz, C. Vogiatzis, and Md. Noor-E-Alam. All the data and code used in the paper will be provided in both Jupiter Notebook and Python format. Linear programming presented in the paper is solved by Gurobi. Users may be able to reproduce all the results presented in the paper and perform further testing by following the instructions. 
+
+This archive is distributed in association with the [INFORMS Journal on
+Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE.txt).
+
+The software and data in this repository are a snapshot of the software and data
+that were used in the research reported on in the paper 
+[Computational Framework for Target Tracking Information Fusion Problems](https://doi.org/10.1287/ijoc.2023.0016) by T. Yang, J. Liu, T. Faiz, C. Vogiatzis, and Md. Noor-E-Alam. 
 
 ## Cite
 
-To cite the contents of this repository, please cite both the paper and this repo.
-T. Yang, J. Liu, T. Faiz, C. Vogiatzis, and Md. Noor-E-Alam (2024) Computational Framework for Target Tracking Information Fusion Problems. INFORMS Journal on Computing.
+To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
+
+https://doi.org/10.1287/ijoc.2023.0016
+
+https://doi.org/10.1287/ijoc.2023.0016.cd
 
 Below is the BibTex for citing this snapshot of the repository.
 
 ```
-@misc{CacheTest,
+@misc{yang2024,
   author =        {T. Yang, J. Liu, T. Faiz, C. Vogiatzis, and Md. Noor-E-Alam},
   publisher =     {INFORMS Journal on Computing},
   title =         {{Computational Framework for Target Tracking Information Fusion Problems}},
   year =          {2024},
+  doi =           {10.1287/ijoc.2023.0016.cd},
   url =           {https://github.com/INFORMSJoC/2023.0016},
   note =          {Available for download at https://github.com/INFORMSJoC/2023.0016},
 }  
 ```
 
-
 ## Description
+
 The goal of this software is to demonstrate the results of Single-source and Multi-source Methods Results of the Target Tracking Information Fusion Problems. User may use the software to obtain the results from the single-source problems first and then move on to the multi-source target tracking problems.
 
 ## Building
+
 All the software in this repository was developed based on Python. During the development, the software was separated into 2 formats, Jupiter Notebook and Python.
 
 The Jupiter Notebook source files for all methods described in the paper is available in the src/Jupiter_Code subfolder of this repository. 
@@ -58,6 +69,7 @@ The Python test files for all methods described in the paper is available in the
 **Before trying to run any of the files in your environment please make sure that all the paths point to the correct folders, paste the data under the corresponding relative path, and go over the function comments in the code.**
 
 ## Results
+
 Figure 8 in the paper shows the Optimality gaps for 18, 19, and 20 targets among 3 to 10 numbers of sensors.
 
 ![Figure 8](results/18_Target_Optimality_Gap.png)
@@ -73,7 +85,9 @@ Figure 9 in the paper shows the Optimality gaps for 8, 9, and 10 sensors with 3 
 Tables 2-10 in the paper can be reviewed under the results folder.
 
 ## Replicating
+
 ### To reproduce Data Generation
+
 * Run: src/Python Code/Data Generation.py, or src/Jupiter Code/Data_Generation.ipynb
 * Note:
   * Dimensions, Distributions, and Scales for the generated data can be controlled in the code file.
@@ -83,6 +97,7 @@ Tables 2-10 in the paper can be reviewed under the results folder.
   * All data used in the manuscript are held in the data folder under the subfolders with the corresponding distribution names.
 
 ### To reproduce Single-source Methods Results alone
+
 * Run: src/Python Code/single_source_algo.py, or src/Jupiter Code/single_source_algo.ipynb
 * Note:
   * Dimensions, Distributions, and Scales for the input data can be controlled in the code file.
@@ -92,6 +107,7 @@ Tables 2-10 in the paper can be reviewed under the results folder.
   * User should use this to reproduce the single-source results from Table 1 to Table 5, Figure 8, and Figure 9 in the manuscript. All of these including tables and figures can also be checked from the result_smallest_0_100.xlsx under the results folder.
 
 ### To reproduce Multi-source Methods Results with Single-source Methods
+
 * Run: scripts/Python Code/test_algos.py, or scripts/Jupiter Code/test_algos.ipynb
 * Note:
   * Dimensions, Distributions, and Scales for the input data can be controlled in the code file.
@@ -103,6 +119,7 @@ Tables 2-10 in the paper can be reviewed under the results folder.
   * User should use this to reproduce the multi-source results from Table 7 to Table 9 in the manuscript. All of these including tables and figures can also be checked from the result_smallest_0_100.xlsx and further test.xlsx under the results folder.
   
 ### To reproduce Noisy Situation Testing
+
 * Run: scripts/Python Code/noise_test.py, or scripts/Jupiter Code/noise_test.ipynb
 * Note:
   * Dimensions, Distributions, and Scales for the input data can be controlled in the code file.
